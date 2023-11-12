@@ -384,7 +384,7 @@ DELETE FROM categories where category_c_id in
 
 
 --4
---ПЕРВЫЙ ВАРИАНТ РЕАЛИЗАЦИИ
+--first realisation
 INSERT INTO colors_goods (color_id, goods_id)
 	SELECT (SELECT color_id FROM colors WHERE color = 'Желтый'), goods_id FROM colors_goods LEFT JOIN 
 	goods USING(goods_id) WHERE name_good LIKE '%пальто%' AND goods_id NOT IN (
@@ -395,7 +395,7 @@ INSERT INTO colors_goods (color_id, goods_id)
 		);
 
 
---ВТОРОЙ ВАРИАНТ РЕАЛИЗАЦИИ
+--second realisation
 /*CREATE OR REPLACE PROCEDURE update_color() AS $$
 DECLARE
 	d_attrs RECORD;
