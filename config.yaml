@@ -1,6 +1,0 @@
-# Базовые параметры настройки конфигурации проекта
-dbname: postgres
-user: postgres
-password: ----
-host: localhost
-dbtableprefix: public.
